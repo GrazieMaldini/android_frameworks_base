@@ -58,7 +58,7 @@ public class CalcTile extends QSTileImpl<BooleanState> {
     static final int REQUEST_CALC = 1;
 
     private static final Intent gCalc = new Intent().setComponent(new ComponentName(
-            "com.google.android.calculator", "com.android.calculator2.Calculator"));
+            "com.google.android.calculator", "com.android.calculator2"));
 
 
     public CalcTile(QSHost host) {
