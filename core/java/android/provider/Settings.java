@@ -4175,46 +4175,6 @@ public final class Settings {
         /** @hide */
         public static final Validator SHOW_BATTERY_PERCENT_VALIDATOR =
                 new SettingsValidators.InclusiveIntegerRangeValidator(0, 2);
-				
-        /**
-         * some devices have a extra hw button e.g. n3 on the back on the
-         * fingerprint sensor. allow mapping button to key
-         *
-         * @hide
-         */
-        public static final String BUTTON_EXTRA_KEY_MAPPING = "button_extra_mapping";
-
-        /** @hide */
-        private static final Validator BUTTON_EXTRA_KEY_MAPPING_VALIDATOR = ANY_STRING_VALIDATOR;
-
-        /**
-         * Enable proxi check for wake keys - must be implemented in a device
-         * KeyHandler
-         * @hide
-         */
-        public static final String DEVICE_PROXI_CHECK_ENABLED = "device_proxi_check_enabled";
-
-        /** @hide */
-        private static final Validator DEVICE_PROXI_CHECK_ENABLED_VALIDATOR = BOOLEAN_VALIDATOR;
-
-        /**
-         * Enable Gesture Haptic feedback
-         * KeyHandler
-         * @hide
-         */
-        public static final String DEVICE_GESTURE_FEEDBACK_ENABLED = "device_gesture_feedback_enabled";
-
-        /** @hide */
-        private static final Validator DEVICE_GESTURE_FEEDBACK_ENABLED_VALIDATOR = BOOLEAN_VALIDATOR;
-
-        /**
-         * @hide
-         */
-        public static final String DEVICE_FEATURE_SETTINGS = "device_feature_settings";
-
-        /** @hide */
-        private static final Validator DEVICE_FEATURE_SETTINGS_VALIDATOR = ANY_STRING_VALIDATOR;
-
 
         /**
          * IMPORTANT: If you add a new public settings you also have to add it to
@@ -4801,6 +4761,13 @@ public final class Settings {
         public static final String THREE_FINGER_GESTURE = "three_finger_gesture";
 
         /**
+         * Whether to enable gaming mode or not
+         *
+         * @hide
+         */
+        public static final String ENABLE_GAMING_MODE = "enable_gaming_mode";
+
+        /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
          *
@@ -4996,7 +4963,6 @@ public final class Settings {
             PRIVATE_SETTINGS.add(EGG_MODE);
             PRIVATE_SETTINGS.add(SHOW_BATTERY_PERCENT);
             PRIVATE_SETTINGS.add(DISPLAY_COLOR_MODE);
-			PRIVATE_SETTINGS.add(DEVICE_PROXI_CHECK_ENABLED);
             PRIVATE_SETTINGS.add(DOUBLE_TAP_SLEEP_LOCKSCREEN);
             PRIVATE_SETTINGS.add(DOUBLE_TAP_SLEEP_GESTURE);
             PRIVATE_SETTINGS.add(STATUS_BAR_CLOCK);
@@ -5119,10 +5085,6 @@ public final class Settings {
             VALIDATORS.put(WIFI_STATIC_DNS1, WIFI_STATIC_DNS1_VALIDATOR);
             VALIDATORS.put(WIFI_STATIC_DNS2, WIFI_STATIC_DNS2_VALIDATOR);
             VALIDATORS.put(SHOW_BATTERY_PERCENT, SHOW_BATTERY_PERCENT_VALIDATOR);
-            VALIDATORS.put(BUTTON_EXTRA_KEY_MAPPING, BUTTON_EXTRA_KEY_MAPPING_VALIDATOR);
-            VALIDATORS.put(DEVICE_PROXI_CHECK_ENABLED, DEVICE_PROXI_CHECK_ENABLED_VALIDATOR);
-            VALIDATORS.put(DEVICE_GESTURE_FEEDBACK_ENABLED, DEVICE_GESTURE_FEEDBACK_ENABLED_VALIDATOR);
-            VALIDATORS.put(DEVICE_FEATURE_SETTINGS, DEVICE_FEATURE_SETTINGS_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_CLOCK, STATUS_BAR_CLOCK_VALIDATOR);
             VALIDATORS.put(STATUSBAR_CLOCK_STYLE, STATUSBAR_CLOCK_STYLE_VALIDATOR);
             VALIDATORS.put(STATUS_BAR_CLOCK_SECONDS, STATUS_BAR_CLOCK_SECONDS_VALIDATOR);
