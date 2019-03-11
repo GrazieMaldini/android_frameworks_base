@@ -42,6 +42,12 @@
 
     <bool name="config_canForceDozeNotifications">true</bool>
 
+    <string-array name="config_deviceKeyHandlerLibs" translatable="false">
+    </string-array>
+
+    <string-array name="config_deviceKeyHandlerClasses" translatable="false">
+    </string-array>
+
     <!-- Path to the library that contains a alternative device specific key handler -->
     <string name="config_alternativeDeviceKeyHandlerLib" translatable="false"></string>
 
