@@ -4862,6 +4862,14 @@ public final class Settings {
         public static final String SWAP_NAVIGATION_KEYS = "swap_navigation_keys";
 
         /**
+         * The enabled mode for the theme tile.
+         * - ACCENT
+         * - STYLE
+         * @hide
+         */
+        public static final String THEME_TILE_ENABLED_MODE = "theme_tile_enabled_mode";
+
+        /**
          *  Enable statusbar double tap gesture on to put device to sleep
          * @hide
          */
