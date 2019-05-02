@@ -3204,8 +3204,8 @@ public class StatusBar extends SystemUI implements DemoMode,
                             userSetupComplete));
                     return;
                 }
-
                 onCameraLaunchGestureDetected(StatusBarManager.CAMERA_LAUNCH_SOURCE_SCREEN_GESTURE);
+            }
             else if ("com.android.systemui.ACTION_DISMISS_KEYGUARD".equals(action)) {
                 if (intent.hasExtra("launch")) {
                     Intent launchIntent = (Intent) intent.getParcelableExtra("launch");
